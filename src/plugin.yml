@@ -1,0 +1,23 @@
+author: Phoenix_Frenzy
+database: false
+authors: [Multitallented]
+description: Allows you to post and/or accept various job listings.
+main: phoenixfrenzy.redcastlemedia.bukkit.hireme.HireMe
+name: HireMe
+startup: postworld
+version: 2.1.0-b059
+depend: [Vault]
+softdepend: [Townships]
+commands:
+   hm:
+      aliases: ['hire', 'hireme']
+      description: HireMe commands
+      usage: /<command>
+permissions:
+   herostronghold.create.all:
+      description: Allows you to create a HeroStronghold of any type if you have the necessary materials
+      default: op
+   herostronghold.admin:
+      description: Lets you use admin commands
+      default: op
+loadafter: [Vault]
